@@ -3,66 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Markandote Labs.</title>
+    <title>Markandote Labs</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
+        <h1>¡Bienvenido a Markandote <span class="golden">Labs</span>!</h1>
         <nav>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
-                <li class="dropdown">
-                    <a href="#Soluciones">Soluciones</a>
-                    <div class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                    </div>
-                </li>
-                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="inicio">
-        <h1>Markandote Labs.</h1>
-        <p>Transformamos tu presencia en línea.</p>
+        <h1>Transformamos tu presencia en línea</h1>
+        <p>¿Tu restaurante no está aprovechando al máximo las herramientas digitales? ¡No te preocupes, estamos aquí para ayudarte!</p>
+        <p>Descubre cómo podemos hacer que tu restaurante destaque en el mundo digital y atraiga más clientes.</p>
     </section>
 
-    <section id="Soluciones">
-        <h2 ><a  href="Soluciones.html">Nuestros Servicios</a></h2 >
-        <ul>
-            <li>Diseño web</li>
-            <li>Marketing en redes sociales</li>
-            <li>Optimización de motores de búsqueda (SEO)</li>
-            <li>Publicidad en línea</li>
-        </ul>
-    </section>
-
-    <section id="portafolio">
-        <h2>Nuestro Portafolio</h2>
-        <!-- Aquí puedes agregar imágenes y descripciones de proyectos anteriores -->
+    <section id="servicios">
+        <h1>Nuestros Servicios</h1>
+        <div class="servicio parallax" id="diseno-web">
+            <div class="content">
+                <h2>Diseño Web</h2>
+                <p>¡Haz que tu sitio web sea tan delicioso como tus platillos!</p>
+                <p>Beneficios: Atractivo, funcional, refleja la esencia de tu restaurante.</p>
+            </div>
+        </div>
+        <div class="servicio parallax" id="marketing-redes">
+            <div class="content">
+                <h2>Marketing en Redes Sociales</h2>
+                <p>¡Dale sabor a tu presencia en redes sociales!</p>
+                <p>Beneficios: Aumenta la visibilidad, atrae más clientes.</p>
+            </div>
+        </div>
+        <div class="servicio parallax" id="seo">
+            <div class="content">
+                <h2>Optimización de Motores de Búsqueda (SEO)</h2>
+                <p>¡Haz que tu restaurante sea el plato principal en Google!</p>
+                <p>Beneficios: Aparece en los primeros resultados de búsqueda, atrae más tráfico.</p>
+            </div>
+        </div>
+        <div class="servicio parallax" id="publicidad-online">
+            <div class="content">
+                <h2>Publicidad en Línea</h2>
+                <p>¡Haz que tu restaurante sea la estrella del menú!</p>
+                <p>Beneficios: Aumenta tu visibilidad, atrae más clientes.</p>
+            </div>
+        </div>
     </section>
 
     <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Ponte en contacto con nosotros:</p>
-        <form action="enviar.php" method="POST">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
+        <h1>Contacto</h1>
+        <p>¡Estamos listos para ayudarte a destacar en el mundo digital! Ponte en contacto con nosotros para saber cómo podemos transformar tu restaurante.</p>
+        <button onclick="window.location.href='#inicio'">¡Contáctanos!</button>
     </section>
     
     <footer>
-        <p>&copy; 2023 Agencia de Presencia Digital</p>
+        <p>&copy; 2023 Markandote Labs</p>
     </footer>
-
-    <script src="main.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>

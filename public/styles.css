@@ -1,152 +1,147 @@
-/* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
+    background: linear-gradient(135deg, #1a1a1d, #4e4e50);
+    color: #fff;
+    text-align: center;
 }
 
 header {
-    background-color: #0d3c41;
-    color: #fff;
-    padding: 10px 0;
+    background-color: #800020;
+    padding: 20px 0;
+    color: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
 }
 
 nav ul {
-    list-style: none;
+    list-style-type: none;
+    margin: 0;
     padding: 0;
-    text-align: center;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
-}
-
-nav ul li:last-child {
-    margin-right: 0;
+    margin: 0 20px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #d4af37;
     font-weight: bold;
 }
 
-/* Estilos de las secciones */
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
 section {
-    padding: 40px 0;
-    text-align: center;
+    padding: 50px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-h1, h2 {
-    color: #333;
-}
-
-/* Estilos del formulario de contacto */
-form {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 10px;
+section h1 {
+    font-size: 2em;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    color: #d4af37;
 }
 
-button[type="submit"] {
-    background-color: #333;
+section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.servicio {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.servicio .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
     color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-/* Estilos del pie de página */
+.parallax {
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#diseno-web {
+    background-image: url('https://via.placeholder.com/1200x800?text=Diseño+Web');
+}
+
+#marketing-redes {
+    background-image: url('https://via.placeholder.com/1200x800?text=Marketing+en+Redes+Sociales');
+}
+
+#seo {
+    background-image: url('https://via.placeholder.com/1200x800?text=SEO');
+}
+
+#publicidad-online {
+    background-image: url('https://via.placeholder.com/1200x800?text=Publicidad+en+Línea');
+}
+
 footer {
     background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
-
-/* Estilos responsivos */
-@media (max-width: 768px) {
-    header {
-        padding: 20px 0;
-    }
-
-    nav ul li {
-        display: block;
-        margin-bottom: 10px;
-    }
-
-    section {
-        padding: 20px 0;
-    }
-}
-
-
-/* Style The Dropdown Button */
-.dropbtn {
-    background-color: #4CAF50;
     color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
+    padding: 20px 0;
     position: relative;
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #f1f1f1}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
-  }
+    bottom: 0;
+    width: 100%;
+}
 
+footer p {
+    margin: 0;
+}
+
+button {
+    background-color: #d4af37;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b8860b;
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 30px;
+    }
+
+    section h1 {
+        font-size: 1.5em;
+    }
+
+    section p {
+        font-size: 1em;
+    }
+}
